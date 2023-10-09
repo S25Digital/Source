@@ -3,6 +3,7 @@ const pump = require('pump');
 const path = require('path');
 const releaseUtils = require('@tryghost/release-utils');
 const inquirer = require('inquirer');
+const tailwindcss = require("tailwindcss");
 
 // gulp plugins and utils
 const livereload = require('gulp-livereload');
@@ -48,6 +49,7 @@ function css(done) {
         src('assets/css/screen.css', {sourcemaps: true}),
         postcss([
             easyimport,
+            tailwindcss,
             autoprefixer(),
             cssnano()
         ]),

@@ -1,3 +1,12 @@
+/**
+Tailwind CSS Utilities
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 /* Table of contents
 /* ------------------------------------------------------------
 
